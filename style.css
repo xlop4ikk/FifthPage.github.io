@@ -1,0 +1,432 @@
+/* font-family: 'Josefin Sans', sans-serif; font-weight: 400/700 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* ЗАГОЛОВОЧНАЯ ЧАСТЬ */
+
+.header {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(header-photo.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.first_photo {
+    width: 30%;
+}
+
+.second_photo {
+    position: absolute;
+    top: 3%;
+    left: 14%;
+    width: 7%;
+
+}
+
+.third_photo {
+    width: 30%;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 1% 1%;
+}
+
+.header-container {
+    position: absolute;
+    width: 45%;
+    height: 40%;
+    top: 30%;
+    left: 15%;
+}
+
+.TurizmVkz {
+    font-size: 60px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+.container-text {
+    display: block;
+    position: absolute;
+    font-weight: 400;
+    top: 30%;
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+@media only screen and (max-width: 400px) {
+    .container-text {
+        top: 70%;
+    }
+
+    .first_photo {
+        display: none;
+    }
+
+    .second_photo {
+        display: none;
+    }
+
+    .third_photo {
+        display: none;
+    }
+
+    .main-photo2 {
+        display: block;
+        margin-top: 0%;
+        margin-right: 0;
+        width: 25%;
+        height: 25%;
+    }
+}
+
+/* ОСНОВНАЯ ЧАСТЬ */
+
+.main {
+    position: relative;
+    min-height: 200vh;
+    width: 100%;
+    background-color: white;
+    width: 85%;
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.content1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-title {
+    padding-bottom: 2%;
+    text-align: center;
+    color: rgb(46, 54, 111);
+}
+
+.main-photo1 {
+    display: block;
+    margin-top: 5%;
+    width: 98%;
+}
+
+.content-text1 {
+    display: block;
+    width: 50%;
+    margin-top: 7%;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.Razvitie {
+    padding-bottom: 5%;
+    color: rgb(46, 54, 111);
+}
+
+.content2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-photo2 {
+    display: block;
+    margin-top: 0%;
+    margin-right: 0;
+    width: 49.8%;
+}
+
+.content-text2 {
+    display: block;
+    width: 50%;
+    margin-top: 4.5%;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.Cifroviz {
+    padding-bottom: 5%;
+    color: rgb(46, 54, 111);
+}
+
+.content3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-photo3 {
+    display: block;
+    margin-top: 0%;
+    width: 98%;
+}
+
+.content-text3 {
+    display: block;
+    width: 50%;
+    margin-top: 4.5%;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.Inform {
+    padding-bottom: 5%;
+    color: rgb(46, 54, 111);
+}
+
+.content4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-photo4 {
+    display: block;
+    margin-top: 0%;
+    margin-right: 0;
+    width: 100%; 
+}
+
+.content-text4 {
+    display: block;
+    width: 53%;
+    margin-top: 4.5%;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.Marketing {
+    padding-bottom: 5%;
+    color: rgb(46, 54, 111);
+}
+
+.news-titles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+}
+
+.news-title {
+    color:rgb(46, 54, 111);
+}
+
+.advert {
+    color: rgb(189, 148, 118);
+}
+
+.grid * {
+    box-sizing: border-box;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 30px 0;
+    padding-left: 15%;
+    text-align: center;
+}
+/* Кол-во блоков на разных экранах */
+@media only screen and (max-width: 1200px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+.grid-item {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+    transition: box-shadow .3s;
+    width: 100%;
+    height: 100%;  
+}
+.grid-item .image {
+    height: 200px;
+    overflow: hidden;
+}
+.grid-item .info {
+    position: relative;
+    height: calc(100% - 200px);
+    padding: 16px 14px 80px 14px;
+}
+.grid-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+.grid-item .image img  {
+      transition: transform 280ms ease-in-out;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+.grid-item:hover .image img  {
+    transform: scale(1.1);
+}
+.info h2 {
+    font-family: 'Roboto', Тahoma, sans-serif;
+    color: #337AB7;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+.info-text p {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Verdana, sans-serif; 
+    margin-bottom: 10px;
+}
+.info-text p:last-child {
+    margin-bottom: 0;
+}
+.grid-item .button-wrap {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    text-align: center;
+}
+/* Кнопка подробнее */
+.atuin-btn {
+    display: inline-flex;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase; 
+    font-family: 'Roboto', Тahoma, sans-serif;
+    background: rgb(189, 148, 118);
+    cursor: pointer; 
+    border: 2px solid #BFE2FF;
+}
+.atuin-btn:hover,
+.atuin-btn:active,
+.atuin-btn:focus {
+    color: #FFF;
+}
+.atuin-btn:after,
+.atuin-btn:before {
+    position: absolute;
+    height: 4px;
+    left: 50%;
+    background: rgb(189, 148, 118);
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+.atuin-btn:before {
+    top: -6px;
+}
+.atuin-btn:hover:after,
+.atuin-btn:hover:before,
+.atuin-btn:active:after,
+.atuin-btn:active:before,
+.atuin-btn:focus:after,
+.atuin-btn:focus:before {
+    width: 100%;
+    left: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(189, 148, 118);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(189, 148, 118);
+}
+
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 0;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.mail {
+    margin-top: 3%;
+}
+
+.mail-input {
+    margin-top: 2%;
+}
+
+.map-style {
+    max-width: 500px; height: 450px;
+}
