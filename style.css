@@ -89,6 +89,12 @@ body {
     color: whitesmoke;
 }
 
+@media only screen and (max-width: 610px) {
+    .container-text {
+        top: 45%;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     .container-text {
         top: 70%;
