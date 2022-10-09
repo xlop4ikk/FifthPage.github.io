@@ -22,7 +22,7 @@ body {
 
 .nav {
     display: flex;
-    padding: 2% 6%;
+    padding: 2% 2%;
     justify-content: space-between;
     align-items: center; 
 }
@@ -38,16 +38,22 @@ body {
     color: whitesmoke;
 }
 
+.container-photos {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
 .first_photo {
     width: 30%;
 }
 
 .second_photo {
-    position: absolute;
-    top: 3%;
-    left: 14%;
-    width: 7%;
-
+    max-width:100% !important;
+    height:auto;
+    display:block;
 }
 
 .third_photo {
@@ -82,11 +88,17 @@ body {
 
 .container-text {
     display: block;
-    position: absolute;
     font-weight: 400;
     top: 30%;
     font-size: 17px;
     color: whitesmoke;
+}
+
+@media only screen and(max-width: 800px) {
+    .header-container {
+        display: block;
+        max-width: 50%;
+    }
 }
 
 @media only screen and (max-width: 610px) {
@@ -97,7 +109,7 @@ body {
 
 @media only screen and (max-width: 400px) {
     .container-text {
-        top: 70%;
+        top: 45%;
     }
 
     .first_photo {
@@ -111,14 +123,6 @@ body {
     .third_photo {
         display: none;
     }
-
-    .main-photo2 {
-        display: block;
-        margin-top: 0%;
-        margin-right: 0;
-        width: 25%;
-        height: 25%;
-    }
 }
 
 /* ОСНОВНАЯ ЧАСТЬ */
@@ -126,7 +130,6 @@ body {
 .main {
     position: relative;
     min-height: 200vh;
-    width: 100%;
     background-color: white;
     width: 85%;
     margin-top: 5%;
@@ -160,31 +163,6 @@ body {
 }
 
 .Razvitie {
-    padding-bottom: 5%;
-    color: rgb(46, 54, 111);
-}
-
-.content2 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.main-photo2 {
-    display: block;
-    margin-top: 0%;
-    margin-right: 0;
-    width: 49.8%;
-}
-
-.content-text2 {
-    display: block;
-    width: 50%;
-    margin-top: 4.5%;
-    justify-content: center;
-    font-size: 17px;
-}
-
-.Cifroviz {
     padding-bottom: 5%;
     color: rgb(46, 54, 111);
 }
